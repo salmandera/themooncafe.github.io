@@ -1,0 +1,134 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  header {
+    background-color: #111;
+    color: #fff;
+    padding: 1rem ;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .hero {
+    text-align: center;
+    padding: 290px 0;
+    background-image: url('ahahah.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  .contact,.about {
+    text-align: center;
+    padding: 275px 0;
+    height: 643px;
+    background-image: url('sky-955983_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #111;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    overflow: hidden;
+  }
+  .button::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, #ffffff 20%, transparent 60%);
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  .button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  .menu {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .menu-item {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .menu-item img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .menu-item h3 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .menu-item p {
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  .menu-item .price {
+    font-weight: bold;
+    color: #ff6600;
+  }
+  
+  /* About Us Page Styles */
+  .about {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  /* Contact Page Styles */
+  .contact {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  
+  .contact-info p {
+    margin: 0.5rem 0;
+  }
+  footer {
+    background-color: #111;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+  }
